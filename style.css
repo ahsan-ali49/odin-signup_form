@@ -38,13 +38,14 @@ h1 {
   background-color: whitesmoke;
 }
 .midle-right {
-  height: 30vh;
+  height: 31vh;
+  padding-top: 2vh;
   padding-left: 5vw;
   background-color: white;
 }
 
 .bottom-right {
-  height: 33vh;
+  height: 30vh;
   background-color: whitesmoke;
 }
 
@@ -54,4 +55,23 @@ p {
   font-size: 2em;
   font-weight: bolder;
   max-width: 88vh;
+}
+form {
+  margin-top: 1vh;
+  width: 30vw;
+}
+label {
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  color: rgb(0, 0, 0);
+}
+input {
+  display: block;
+}
+
+.laputdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4vh;
 }
