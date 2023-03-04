@@ -59,22 +59,26 @@
             </span>
             <span>
               <label for="phnumber">PHONE NUMBER</label>
-              <input type="number" name="phnumber" id="phnumber" />
+              <input type="text" name="phnumber" id="phnumber" />
             </span>
           </div>
           <div class="laputdiv">
             <span>
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" aria-invalid="true"/>
             </span>
             <span>
               <label for="cnfmpassword">CONFIRM PASSWORD</label>
               <input type="password" name="password" id="cnfmpassword" />
             </span>
           </div>
-        </form>
+        
       </div>
-      <div class="bottom-right"></div>
+      <div class="bottom-right">
+        <button type="submit">Create Account</button>
+        <p id="Loginpara">Already have an account? <span>Log in</span></p>
+      </div>
+    </form>
     </div>
   </body>
 </html>
