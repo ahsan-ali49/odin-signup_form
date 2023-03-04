@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp Form</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet" />
-    <link
+    <!-- <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet" /> -->
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
-    />
+    /> -->
   </head>
   <body>
     <div class="sides left">
@@ -31,7 +31,7 @@
       </div>
       <div class="midle-right">
         <p>Let's do this!</p>
-        <form action="/index.html">
+        <form>
           <div class="laputdiv">
             <span>
               <label for="fstname">FIRST NAME</label>
@@ -65,20 +65,34 @@
           <div class="laputdiv">
             <span>
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" aria-invalid="true"/>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                minlength="5"
+                maxlength="9"
+                required
+              />
             </span>
             <span>
               <label for="cnfmpassword">CONFIRM PASSWORD</label>
-              <input type="password" name="password" id="cnfmpassword" />
+              <input
+                type="password"
+                name="password"
+                id="cnfmpassword"
+                minlength="5"
+                maxlength="9"
+                required
+              />
             </span>
           </div>
-        
+        </form>
       </div>
       <div class="bottom-right">
-        <button type="submit">Create Account</button>
+        <button type="submit" id="submitbtn">Create Account</button>
         <p id="Loginpara">Already have an account? <span>Log in</span></p>
       </div>
-    </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
